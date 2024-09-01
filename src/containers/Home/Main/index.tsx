@@ -1,8 +1,10 @@
 import './index.css'
 import Dashboard from '../../../../public/dashboard.png'
+import Wave from '../../../../public/wave.svg';
 
 export default function Main(){
     return(
+        <>
         <main className='main'>
             <div className='main-title'>
                 <h1>SaaS App HTML Landing Page</h1>
@@ -13,5 +15,11 @@ export default function Main(){
                 <img src={Dashboard} alt="dash" />
             </div>
         </main>
+
+        <div className="wave">
+            <img src={Wave} alt="wave" />
+        </div>
+
+        </>
     )
 }

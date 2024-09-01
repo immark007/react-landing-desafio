@@ -3,6 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
     & .main-title{
         display: flex;
         flex-direction: column;
@@ -35,12 +38,43 @@
 
     & .main-img{
         display: flex;
+        z-index: 0;
     }
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 530px;
 }
 
 
 @media screen and (max-width: 730px) {
     .main{
         flex-direction: column;
+        position: static;
+    }
+
+    .main-title{
+        order: 2;
+        width: 100%;
+    }
+
+    .main-title h1 {
+        max-width: 100%; /* Altere de width para max-width se quiser que o texto ocupe o máximo possível */
+        font-size: 24px; /* Altere o tamanho da fonte conforme necessário */
+        line-height: normal;
+        text-align: left; /* Centraliza o texto */
+    }
+
+
+    .main-img img{
+        width: 300px;
+    }
+
+
+    .wave{
+        display: none;
     }
 }

@@ -4,6 +4,7 @@
 :root{
     --color-primary: #5F4DEF;
     --color-white: #fff;
+    --color-gray: #B1B8C1;
 }
 
 html, body{
